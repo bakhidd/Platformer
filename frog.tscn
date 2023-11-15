@@ -90,7 +90,7 @@ radius = 153.16
 size = Vector2(18, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xv8dq"]
-size = Vector2(25, 14.5)
+size = Vector2(25, 12.5)
 
 [node name="Frog" type="CharacterBody2D"]
 script = ExtResource("1_6xgi7")
@@ -120,7 +120,7 @@ shape = SubResource("RectangleShape2D_xfxmp")
 [node name="PlayerCollision" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCollision"]
-position = Vector2(0.5, -7.75)
+position = Vector2(0.5, -6.75)
 shape = SubResource("RectangleShape2D_xv8dq")
 
 [connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]

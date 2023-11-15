@@ -260,4 +260,4 @@ libraries = {
 "": SubResource("AnimationLibrary_n7e45")
 }
 
-[node name="AnimationTree" type="AnimationTree" parent="."]
+[node name="AnimationTree" type="AnimationTree" parent="AnimationPlayer"]
