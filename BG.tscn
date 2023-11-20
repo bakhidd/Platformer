@@ -93,3 +93,137 @@ texture = ExtResource("3_kvr1m")
 [node name="Middle8" type="Sprite2D" parent="ParallaxLayer2"]
 position = Vector2(1236, 626)
 texture = ExtResource("3_kvr1m")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Back" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(2937, 433)
+scale = Vector2(3.25, 3.725)
+texture = ExtResource("1_8vtoy")
+
+[node name="Back2" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(5337, 433)
+scale = Vector2(3.25, 3.725)
+texture = ExtResource("1_8vtoy")
+
+[node name="houses2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Plant-house" type="Sprite2D" parent="houses2"]
+position = Vector2(104, 494)
+texture = ExtResource("4_hyita")
+
+[node name="Pine" type="Sprite2D" parent="houses2"]
+position = Vector2(4, 452)
+scale = Vector2(1.07317, 1.34615)
+texture = ExtResource("5_fyrb5")
+
+[node name="Bush" type="Sprite2D" parent="houses2"]
+position = Vector2(287.5, 532.5)
+scale = Vector2(1.23913, 1.39286)
+texture = ExtResource("6_oqg66")
+
+[node name="Tree" type="Sprite2D" parent="houses2"]
+position = Vector2(621, 484)
+texture = ExtResource("8_rfuh2")
+
+[node name="Wooden-house" type="Sprite2D" parent="houses2"]
+position = Vector2(333, 510)
+scale = Vector2(0.928571, 1.08163)
+texture = ExtResource("9_q2hdu")
+
+[node name="Palm" type="Sprite2D" parent="houses2"]
+position = Vector2(842, 442)
+scale = Vector2(1.06962, 1.25568)
+texture = ExtResource("11_fcgsq")
+
+[node name="Plant-house2" type="Sprite2D" parent="houses2"]
+position = Vector2(1026.75, 497.75)
+scale = Vector2(1.19106, 1.25728)
+texture = ExtResource("4_hyita")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1232, 0)
+
+[node name="Middle" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(4, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle2" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(180, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle3" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(356, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle4" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(532, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle5" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(708, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle6" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(884, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle7" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(1060, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle8" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(1236, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle9" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(2644, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle10" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(2820, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle11" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(2996, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle12" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(3172, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle13" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(3348, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle14" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(3524, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle15" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(3700, 626)
+texture = ExtResource("3_kvr1m")
+
+[node name="Middle16" type="Sprite2D" parent="ParallaxLayer4"]
+clip_children = 2
+position = Vector2(3876, 626)
+texture = ExtResource("3_kvr1m")
