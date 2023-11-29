@@ -103,7 +103,7 @@ shape = SubResource("RectangleShape2D_6cf1v")
 texture_filter = 1
 position = Vector2(1, -15)
 sprite_frames = SubResource("SpriteFrames_j642n")
-animation = &"Death"
+animation = &"Jump"
 
 [node name="PlayerDetection" type="Area2D" parent="."]
 

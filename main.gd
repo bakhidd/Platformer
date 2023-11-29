@@ -11,4 +11,4 @@ func _on_quit_pressed(): #function for the pressed Quit-button
 
 
 func _on_play_pressed(): #function for the pressed Play-button
-	get_tree().change_scene_to_file("res://world.tscn")
+	get_tree().change_scene_to_file("res://Level_1.tscn")
