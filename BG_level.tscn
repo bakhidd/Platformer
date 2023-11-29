@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmfo66co7blng"]
+
+[ext_resource type="Texture2D" uid="uid://c0t63cogf65fe" path="res://sunny-land/assets/environment/back.png" id="1_ohwc4"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="Back" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(1154, 585.5)
+scale = Vector2(6, 4.87917)
+texture = ExtResource("1_ohwc4")
+
+[node name="Back3" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(-1140, 586)
+scale = Vector2(6, 4.87917)
+texture = ExtResource("1_ohwc4")
+
+[node name="Back2" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(3456, 585)
+scale = Vector2(6, 4.87917)
+texture = ExtResource("1_ohwc4")
+
+[node name="Back4" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(8054, 585)
+scale = Vector2(6, 4.87917)
+texture = ExtResource("1_ohwc4")
+
+[node name="Back5" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(5760, 585.5)
+scale = Vector2(6, 4.87917)
+texture = ExtResource("1_ohwc4")
+
+[node name="Back6" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(10356, 584.5)
+scale = Vector2(6, 4.87917)
+texture = ExtResource("1_ohwc4")
