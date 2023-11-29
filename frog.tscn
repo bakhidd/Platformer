@@ -87,7 +87,7 @@ animations = [{
 radius = 153.16
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xfxmp"]
-size = Vector2(18, 16)
+size = Vector2(17, 11)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xv8dq"]
 size = Vector2(25, 12.5)
@@ -103,7 +103,7 @@ shape = SubResource("RectangleShape2D_6cf1v")
 texture_filter = 1
 position = Vector2(1, -15)
 sprite_frames = SubResource("SpriteFrames_j642n")
-animation = &"Death"
+animation = &"Jump"
 
 [node name="PlayerDetection" type="Area2D" parent="."]
 
@@ -114,7 +114,7 @@ shape = SubResource("CircleShape2D_ah27k")
 [node name="PlayerDeath" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDeath"]
-position = Vector2(0, -9)
+position = Vector2(-0.5, -11.5)
 shape = SubResource("RectangleShape2D_xfxmp")
 
 [node name="PlayerCollision" type="Area2D" parent="."]

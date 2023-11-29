@@ -70,21 +70,22 @@ animations = [{
 radius = 145.674
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8rn38"]
-size = Vector2(24, 14)
+size = Vector2(17, 12.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tykem"]
-size = Vector2(26, 14)
+size = Vector2(21.25, 10)
 
 [node name="Opossum" type="CharacterBody2D"]
 script = ExtResource("1_ufnl2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2, 5)
+position = Vector2(-3, 5)
 shape = SubResource("RectangleShape2D_mn76c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_i01rx")
-animation = &"Death"
+animation = &"Idle"
+metadata/_edit_lock_ = true
 
 [node name="PlayerDetection" type="Area2D" parent="."]
 
@@ -95,13 +96,13 @@ shape = SubResource("CircleShape2D_gm3ko")
 [node name="PlayerDeath" type="Area2D" parent="."]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="PlayerDeath"]
-position = Vector2(-2, 3)
+position = Vector2(-1, 2.625)
 shape = SubResource("RectangleShape2D_8rn38")
 
 [node name="PlayerCollision" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCollision"]
-position = Vector2(-2, 5)
+position = Vector2(-6, 4)
 shape = SubResource("RectangleShape2D_tykem")
 
 [connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cq88yyjwwtm8o"]
+
+[ext_resource type="Script" path="res://Fire.gd" id="1_8ewg8"]
+[ext_resource type="Script" path="res://FireFuck.gd" id="1_tiois"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_prby6"]
+radius = 6.0
+height = 18.0
+
+[node name="Fire" type="Area2D"]
+position = Vector2(-6, 3)
+script = ExtResource("1_tiois")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(27, 11)
+shape = SubResource("CapsuleShape2D_prby6")
+script = ExtResource("1_8ewg8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

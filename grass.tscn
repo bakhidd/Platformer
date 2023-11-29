@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bb6dw1kkg8xyg"]
+
+[ext_resource type="Script" path="res://Grass.gd" id="1_jqsqc"]
+[ext_resource type="Texture2D" uid="uid://cdci6bj36jtxy" path="res://Sunny-land-files/Graphical Assets/sprites/grass1.png" id="2_nvdfm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vqlg4"]
+size = Vector2(46, 8)
+
+[node name="Grass" type="Area2D"]
+script = ExtResource("1_jqsqc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(123, 92)
+shape = SubResource("RectangleShape2D_vqlg4")
+
+[node name="Grass1" type="Sprite2D" parent="."]
+position = Vector2(109, 90)
+texture = ExtResource("2_nvdfm")
+
+[node name="Grass2" type="Sprite2D" parent="."]
+position = Vector2(124, 90)
+texture = ExtResource("2_nvdfm")
+
+[node name="Grass3" type="Sprite2D" parent="."]
+position = Vector2(140, 90)
+texture = ExtResource("2_nvdfm")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
