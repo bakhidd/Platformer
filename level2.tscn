@@ -706,7 +706,7 @@ autostart = true
 [node name="BG" parent="." instance=ExtResource("14_t31tq")]
 
 [node name="Ladder" parent="." instance=ExtResource("15_ftrxt")]
-position = Vector2(594, 656)
+position = Vector2(594, 712)
 
 [node name="Ladder2" type="Area2D" parent="."]
 position = Vector2(4691, 655)
