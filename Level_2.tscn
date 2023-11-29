@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cywty2u8vtaor"]
+[gd_scene load_steps=18 format=3 uid="uid://drst4pkheiyn6"]
 
 [ext_resource type="Texture2D" uid="uid://du5k60em2q2ki" path="res://sunny-land/assets/environment/tileset.png" id="1_evup1"]
 [ext_resource type="Script" path="res://BG.gd" id="2_v55qu"]
@@ -609,10 +609,6 @@ texture = ExtResource("10_667me")
 
 [node name="Middle6" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
 position = Vector2(884, 626)
-texture = ExtResource("10_667me")
-
-[node name="Middle7" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
-position = Vector2(1060, 626)
 texture = ExtResource("10_667me")
 
 [node name="Middle8" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
