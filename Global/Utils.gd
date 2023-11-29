@@ -1,6 +1,6 @@
 extends Node
 
-const SAVE_PATH = "res://savegame.bin" #if relising game - users instead of res, it's where we'll save the game
+const SAVE_PATH = "res://savegame1.bin" #if relising game - users instead of res, it's where we'll save the game
 
 func saveGame():
 	var file = FileAccess.open(SAVE_PATH, FileAccess.WRITE) #WILL ALLOW US to create a temporary file to write inside of it
