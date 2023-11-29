@@ -5,7 +5,7 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
 #var health = 100
-
+var climbing = false
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var anim = get_node("AnimationPlayer") #@onready is needed because otherwise we wouldn't be able to access anim in a function
@@ -14,6 +14,14 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _physics_process(delta):
 	# Add the gravity.
+	if climbing == false:
+		velocity.y == gravity
+	elif climbing == true:
+		velocity.y = 0
+		if Input.is_action_pressed('ui_up'):
+			velocity.y = -SPEED
+		elif Input.is_action_pressed('ui_down'):
+			velocity.y = SPEED
 	if not is_on_floor(): #if we are in the air we add velocity to the Y direction
 		anim.play("Idle")
 		velocity.y += gravity * delta
@@ -29,7 +37,7 @@ func _physics_process(delta):
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("ui_left", "ui_right") #get_axis checks which one of 2 keys are being pressed,
 	#ui_left => direction = -1, ui_right => 1, of neither => 0
-	
+
 	if direction == -1:
 		get_node("AnimatedSprite2D").flip_h = true
 	elif direction == 1:
