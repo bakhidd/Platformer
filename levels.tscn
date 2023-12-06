@@ -9,19 +9,19 @@
 script = ExtResource("1_4jbbo")
 
 [node name="Level1" type="Button" parent="."]
-offset_left = 233.0
-offset_top = 229.0
-offset_right = 433.0
-offset_bottom = 342.0
+offset_left = 294.0
+offset_top = 228.0
+offset_right = 494.0
+offset_bottom = 341.0
 theme = SubResource("Theme_abb15")
 text = "Level 1
 "
 
 [node name="Level2" type="Button" parent="."]
-offset_left = 564.0
-offset_top = 228.0
-offset_right = 764.0
-offset_bottom = 341.0
+offset_left = 657.0
+offset_top = 229.0
+offset_right = 857.0
+offset_bottom = 342.0
 theme = SubResource("Theme_abb15")
 text = "Level 2
 "

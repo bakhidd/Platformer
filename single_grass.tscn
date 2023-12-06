@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcq0b1ukf0nba"]
+
+[ext_resource type="Script" path="res://SingleGrass.gd" id="1_5ia0g"]
+[ext_resource type="Texture2D" uid="uid://bai2s7avm4oxy" path="res://Sunny-land-files/Graphical Assets/sprites/grass2.png" id="2_cu2xp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ihmmc"]
+radius = 7.0
+
+[node name="SingleGrass" type="Area2D"]
+script = ExtResource("1_5ia0g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ihmmc")
+
+[node name="Grass2" type="Sprite2D" parent="."]
+texture = ExtResource("2_cu2xp")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
